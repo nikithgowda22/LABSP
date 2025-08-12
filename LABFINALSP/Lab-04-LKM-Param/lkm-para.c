@@ -3,13 +3,13 @@
 #include <linux/init.h>
 #include <linux/kernel.h> 
 
-static int irq=10;
+static int irq;
 module_param(irq,int,0660);
 
-static int debug=0;
+static int debug;
 module_param(debug,int,0660);
 
-static char *devname = "simpdev";
+static char *devname;
 module_param(devname,charp,0660);
 
 static int addr[10];
